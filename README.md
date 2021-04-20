@@ -4,7 +4,7 @@ Hide notify is a [BetterDiscord](https://betterdiscord.net/) theme
 
 ## Installation
 
-Download [HideNotify.theme.css]() to your BetterDiscord theme folder
+Download [HideNotify.theme.css](https://github.com/AsrieltheGoat/hidenotify/blob/main/HideNotify.theme.css) to your BetterDiscord theme folder
 
 ## Images
 
