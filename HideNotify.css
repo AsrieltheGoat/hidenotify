@@ -1,0 +1,72 @@
+/* Note:
+    Discord default color for notify is #f04747
+*/
+:root {
+    /* Colors */
+    --hn-color:#f04747; /* Background color */
+    --hn-dnd:#f04747; /* Default */
+
+    /* Size */
+    --hn-line: 4px; /* Default to pixel (px) (Default: 4px)*/
+    --hn-font: 14px; /* Default to pixel (px) (Default: 14px)*/
+
+    /* Other */
+    --hn-elevation-low: ; /* Leave it blank */
+}
+
+.notice-2FJMB4,
+.BDFD-notice,
+.notice-3bPHh-,
+#pluginNotice {
+  font-size: 0px !important;
+  line-height: 18px;
+  position: absolute;
+  top: 46px;
+  width: 100%;
+  transition: all .2s linear;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.notice-2FJMB4,
+.notice-3bPHh-,
+.notice-2FJMB4.BDFDB-notice,
+#pluginNotice {
+  top: 46px;
+}
+
+.notice-2FJMB4::before,
+.notice-3bPHh-::before,
+#pluginNotice::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 100%;
+  height: var(--hn-line);
+  z-index: -1;
+  transition: all 200ms ease-in-out;
+  background-color: var(--hn-color);
+  box-shadow: var(--hn-elevation-low);
+}
+
+.noticeDanger-7u-yT9::before {
+  background-color: var(--hn-dnd);
+}
+
+.notice-2FJMB4:hover::before,
+.BDFD-notice.notice-2FJMB4:hover::before,
+.notice-3bPHh-:hover::before,
+#pluginNotice::before {
+  height: 38px !important;
+}
+
+.notice-2FJMB4:hover,
+.BDFD-notice.notice-2FJMB4:hover,
+.notice-3bPHh-:hover,
+#pluginNotice {
+  font-size: var(--hn-font) !important;
+  line-height: 38px;
+  width: 100%;
+}
